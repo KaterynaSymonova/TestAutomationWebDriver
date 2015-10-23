@@ -5,7 +5,7 @@ package com.epam.utils;
  */
 public class GenerateSubject {
 
-
+// метод генерирует уникальную тему сообщения
     public static String getUniqueSubject (int lengthSubject ) {
 
         StringBuffer stringBuffer = new StringBuffer(lengthSubject);
