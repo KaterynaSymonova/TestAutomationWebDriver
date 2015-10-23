@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="39993" started-at="2015-10-09T06:02:06Z" finished-at="2015-10-09T06:02:46Z">
+    <groups>
+    </groups>
+    <test name="testSpam" duration-ms="39993" started-at="2015-10-09T06:02:06Z" finished-at="2015-10-09T06:02:46Z">
+      <class name="com.epam.testwebdriver.TestSpam">
+        <test-method status="PASS" signature="getWebDriver()" name="getWebDriver" is-config="true" duration-ms="5519" started-at="2015-10-09T06:02:06Z" finished-at="2015-10-09T06:02:11Z">
+        </test-method>
+        <test-method status="FAIL" signature="testSpam()" name="testSpam" duration-ms="34178" started-at="2015-10-09T06:02:11Z" finished-at="2015-10-09T06:02:46Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.08 seconds
+Build info: version: '2.47.2', revision: '4d972c01cab1304452627f837654326a11eb92fe', time: '2015-09-24 09:17:17'
+System info: host: 'EPBYMINW3008', ip: '10.6.103.79', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_40'
+Session ID: 004c3e0e-ff58-4558-ae48-8c5ed8dbf823
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.1}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 10.08 seconds
+Build info: version: '2.47.2', revision: '4d972c01cab1304452627f837654326a11eb92fe', time: '2015-09-24 09:17:17'
+System info: host: 'EPBYMINW3008', ip: '10.6.103.79', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_40'
+Session ID: 004c3e0e-ff58-4558-ae48-8c5ed8dbf823
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=false, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=41.0.1}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:273)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy7.sendKeys(Unknown Source)
+	at com.epam.webdriver.pages.HomePage.markSpam(HomePage.java:57)
+	at com.epam.testwebdriver.TestSpam.testSpam(TestSpam.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:673)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:842)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1166)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:1178)
+	at org.testng.TestRunner.privateRun(TestRunner.java:757)
+	at org.testng.TestRunner.run(TestRunner.java:608)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1158)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1083)
+	at org.testng.TestNG.run(TestNG.java:999)
+	at com.epam.testwebdriver.Runner.main(Runner.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+Caused by: org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Build info: version: '2.47.2', revision: '4d972c01cab1304452627f837654326a11eb92fe', time: '2015-09-24 09:17:17'
+System info: host: 'EPBYMINW3008', ip: '10.6.103.79', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_40'
+Driver info: driver.version: unknown
+	at <anonymous class>.fxdriver.preconditions.visible(file:///C:/Users/Kateryna_Symonova/AppData/Local/Temp/anonymous6091280747079078480webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:9982)
+	at <anonymous class>.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/Kateryna_Symonova/AppData/Local/Temp/anonymous6091280747079078480webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12626)
+	at <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/Kateryna_Symonova/AppData/Local/Temp/anonymous6091280747079078480webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12643)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Kateryna_Symonova/AppData/Local/Temp/anonymous6091280747079078480webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:623)
+]]>
+            </full-stacktrace>
+          </exception>
+        </test-method>
+        <test-method status="PASS" signature="closeDriver()" name="closeDriver" is-config="true" duration-ms="290" started-at="2015-10-09T06:02:46Z" finished-at="2015-10-09T06:02:46Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>
