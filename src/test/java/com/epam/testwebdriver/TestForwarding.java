@@ -27,7 +27,7 @@ public class TestForwarding {
     public void createStepClass() {
         steps = new Steps();
     }
-
+@Parameters ({"login","password","email","login1","password1","email1","login2","password2","email2","pathToFile"})
     @Test
     public   void testAddForward() throws IOException, AWTException, InterruptedException {
 //        steps.loginUser(login2,password2);
@@ -47,13 +47,6 @@ public class TestForwarding {
         steps.sendDefaultMessage(email2);
         //steps.sendDefaultMessage(email2);
         steps.relogin(login2,password2);
-
-
-
-
-
-
-
 }
 
     @AfterTest
