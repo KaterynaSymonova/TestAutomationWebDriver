@@ -12,17 +12,7 @@ import java.io.IOException;
  */
 public class TestForwarding {
     private Steps steps;
-    private String login = "testautomationuser1";
-    private String password = "kf,fhfnjhbz";
-    private String email = "testautomationuser1@gmail.com";
-    private String login2 = "testautomationuser2";
-    private String password2 = "kf,fhfnjhbz";
-    private String email2 = "testautomationuser2@gmail.com";
-    private String login3 = "testautomationuser3";
-    private String password3 = "kf,fhfnjhbz";
-    private String email3 = "testautomationuser3@gmail.com";
-    public final static String PATH_TO_FILE = "C:\\Users\\Kateryna_Symonova\\Desktop\\Worksheet 4.docx";
-
+    
     @BeforeTest
     public void createStepClass() {
         steps = new Steps();
@@ -53,5 +43,4 @@ public class TestForwarding {
     public void closeDriver (){
        Steps.closeDriver();
     }
-
 }
