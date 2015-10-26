@@ -14,35 +14,21 @@
 
 
     <test name="testSpam">
-        <parameter name="login" value="testautomationuser1"/>
-        <parameter name="password" value="kf,fhfnjhbz"/>
-        <parameter name="login2" value="testautomationuser2"/>
-        <parameter name="password2" value="kf,fhfnjhbz"/>
-        <parameter name="email2" value="testautomationuser2@gmail.com"/>
-        
         <classes>
             <class name="com.epam.testwebdriver.TestSpam" />
         </classes>
     </test>
     <test name="testForwarding">
-        <parameter name="login" value="testautomationuser1"/>
-        <parameter name="password" value="kf,fhfnjhbz"/>
-        <parameter name="email" value="testautomationuser1@gmail.com"/>
-        <parameter name="login2" value="testautomationuser2"/>
-        <parameter name="password2" value="kf,fhfnjhbz"/>
-        <parameter name="email2" value="testautomationuser2@gmail.com"/>
-        <parameter name="login3" value="testautomationuser3"/>
-        <parameter name="password3" value="kf,fhfnjhbz"/>
-        <parameter name="email3" value="testautomationuser3@gmail.com"/>
         <parameter name="pathToFile" value="C:\\Users\\Kateryna_Symonova\\Desktop\\Worksheet 4.docx"/>
-        
         <classes>
             <class name="com.epam.testwebdriver.TestForwarding"/>
             
         </classes>
     </test>
     <test name="testAttachBigFile">
-        <parameter name="" value=""
+        <parameter name="pathToFIle" value="C:\Users\Kateryna_Symonova\Desktop\test.wmv">
+
+        </parameter>
     </test>
 
 </suite>

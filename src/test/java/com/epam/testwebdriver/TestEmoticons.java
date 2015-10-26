@@ -4,6 +4,7 @@ import com.epam.step.Steps;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.awt.*;
@@ -13,28 +14,22 @@ import java.awt.*;
  */
 public class TestEmoticons {
     private Steps steps;
-    private final String login = "testautomationuser1";
-    private final String password = "kf,fhfnjhbz";
-    private final String email = "testautomationuser1@gmail.com";
 
-
-
+    @Parameters({"login","password","email"})
     @BeforeTest
-    public  void singIn () {
+    public  void singIn (String login,String password) {
         steps = new Steps();
         steps.loginUser(login, password);
     }
 
     @Test
-    public void testEmoticon()  {
+    public void testEmoticon(String email)  {
         steps.clickNewMessage();
         steps.fillMessage(email);
         steps.clickEmotionsBtn();
         steps.choseEmotions();
         steps.clickSendMessage();
         Assert.assertEquals(steps.checkLetterContainsEmoticon(),true);
-
-
     }
 
     @AfterTest
